@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <!-- The URL of the page where the images are located -->
+    <loc>https://techblogofapps.github.io/intebwio/gallery.html</loc>
+    
+    <!-- Image 1: Default Interface -->
+    <image:image>
+      <image:loc>https://techblogofapps.github.io/intebwio/intebwio1.webp</image:loc>
+      <image:title>Intebwio Default Search Interface</image:title>
+      <image:caption>Intebwio main search interface showing the slogan 'The browser that writes itself' and AI toggles.</image:caption>
+    </image:image>
+
+    <!-- Image 2: Train History Chart -->
+    <image:image>
+      <image:loc>https://techblogofapps.github.io/intebwio/intebwio2.webp</image:loc>
+      <image:title>Intebwio Dynamic Data Visualization</image:title>
+      <image:caption>Intebwio generating an interactive line chart showing the Evolution of Maximum Train Speeds.</image:caption>
+    </image:image>
+
+    <!-- Image 3: Landing Page -->
+    <image:image>
+      <image:loc>https://techblogofapps.github.io/intebwio/intebwio3.webp</image:loc>
+      <image:title>Intebwio Core Philosophy</image:title>
+      <image:caption>The Intebwio landing page with a purple gradient background and the text 'Stop searching. Start generating.'</image:caption>
+    </image:image>
+
+    <!-- Image 4: Computer History Chart -->
+    <image:image>
+      <image:loc>https://techblogofapps.github.io/intebwio/intebwio4.webp</image:loc>
+      <image:title>Intebwio Complex Bar Charts</image:title>
+      <image:caption>Intebwio bar chart showing Computing Speed Evolution for early computers like ENIAC and Colossus.</image:caption>
+    </image:image>
+
+    <!-- Image 5: About Features -->
+    <image:image>
+      <image:loc>https://techblogofapps.github.io/intebwio/intebwio5.webp</image:loc>
+      <image:title>Intebwio Technology Under The Hood</image:title>
+      <image:caption>Intebwio About page detailing features like Semantic Understanding, Knowledge Synthesis via Gemini models, and Dynamic Layouts.</image:caption>
+    </image:image>
+
+    <!-- Image 6: Dark Mode -->
+    <image:image>
+      <image:loc>https://techblogofapps.github.io/intebwio/intebwio6.webp</image:loc>
+      <image:title>Intebwio Elegant Dark Theme</image:title>
+      <image:caption>Intebwio search interface shown in an elegant Dark Mode theme.</image:caption>
+    </image:image>
+  </url>
+</urlset>
