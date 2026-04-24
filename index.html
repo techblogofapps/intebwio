@@ -1,70 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO: First keyword is intebwio -->
-    <meta name="keywords" content="intebwio, browser, intebwio review, best web browser, fast browser, privacy browser, secure internet, independent review, tech blog">
-    <meta name="description" content="An independent, comprehensive review of the Intebwio browser. Discover its features, privacy tools, performance benchmarks, and why it might be your next default browser.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Intebwio Review 2026: The AI Browser That Writes Itself</title>
+    <meta name="description" content="Independent review of Intebwio, the revolutionary AI browser that writes itself. We analyze its synthesis engine, features, SEO capabilities, and overall performance.">
+    <meta name="keywords" content="intebwio, intebwio browser, intebwio review, AI browser, generative web engine, Yaroslav Ostapenko, tech blog of apps">
     <meta name="author" content="TechBlogOfApps">
     <meta name="robots" content="index, follow">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://techblogofapps.github.io/intebwio/" />
-    
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="Intebwio Browser: The Ultimate Independent Review">
-    <meta property="og:description" content="Read our unbiased deep dive into the Intebwio browser. Performance, security, UI, and more.">
-    <meta property="og:url" content="https://techblogofapps.github.io/intebwio/">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
+    <meta property="og:url" content="https://techblogofapps.github.io/intebwio/">
+    <meta property="og:title" content="Intebwio Review 2026: The AI Browser That Writes Itself">
+    <meta property="og:description" content="Independent review of Intebwio, the revolutionary AI browser that writes itself. We analyze its synthesis engine, features, and performance.">
     
-    <title>Intebwio Browser Review - Independent Tech Guide</title>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://techblogofapps.github.io/intebwio/">
+    <meta property="twitter:title" content="Intebwio Review 2026: The AI Browser That Writes Itself">
+    <meta property="twitter:description" content="Independent review of Intebwio, the revolutionary AI browser that writes itself. We analyze its synthesis engine, features, and performance.">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://techblogofapps.github.io/intebwio/" />
+
+    <!-- Structured Data (Schema.org) for Review -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Intebwio",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Web",
+        "url": "https://intebwio.com/",
+        "author": {
+          "@type": "Person",
+          "name": "Yaroslav Ostapenko"
+        },
+        "description": "An AI-powered browser that generates custom web pages instantly based on user queries."
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TechBlogOfApps",
+        "url": "https://techblogofapps.github.io/"
+      },
+      "datePublished": "2026-04-24",
+      "reviewBody": "Intebwio fundamentally changes the browsing experience by synthesizing information into ad-free, auto-generated UI pages rather than providing a list of links.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "TechBlogOfApps"
+      }
+    }
+    </script>
 
     <style>
         /* ==========================================================================
-           CSS VARIABLES & RESET
+           1. CSS VARIABLES & THEMING
            ========================================================================== */
         :root {
-            --primary-color: #2563eb;
-            --primary-hover: #1d4ed8;
-            --secondary-color: #10b981;
-            --background-light: #f8fafc;
-            --background-dark: #0f172a;
-            --text-main: #334155;
-            --text-light: #64748b;
-            --text-inverted: #f8fafc;
-            --heading-color: #0f172a;
+            /* Light Theme Colors */
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #334155;
+            --text-muted: #64748b;
+            
+            --accent-primary: #3b82f6;
+            --accent-hover: #2563eb;
+            --accent-light: #eff6ff;
+            
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            
             --border-color: #e2e8f0;
-            --card-bg: #ffffff;
-            --disclaimer-bg: #fffbeb;
-            --disclaimer-text: #b45309;
+            --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+            --header-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
             
-            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            /* Typography */
+            --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
             
+            /* Spacing */
             --spacing-xs: 0.25rem;
             --spacing-sm: 0.5rem;
             --spacing-md: 1rem;
-            --spacing-lg: 2rem;
-            --spacing-xl: 4rem;
-            --spacing-xxl: 8rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-2xl: 3rem;
+            --spacing-3xl: 4rem;
+            --spacing-4xl: 6rem;
             
+            /* Layout */
+            --container-max-width: 1200px;
             --border-radius-sm: 0.25rem;
             --border-radius-md: 0.5rem;
             --border-radius-lg: 1rem;
+            --border-radius-xl: 1.5rem;
             
-            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            
+            /* Transitions */
             --transition-fast: 0.15s ease-in-out;
             --transition-normal: 0.3s ease-in-out;
+            --transition-slow: 0.5s ease-in-out;
         }
 
-        * {
+        [data-theme="dark"] {
+            /* Dark Theme Colors */
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-tertiary: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            
+            --accent-primary: #60a5fa;
+            --accent-hover: #3b82f6;
+            --accent-light: #1e3a8a;
+            
+            --border-color: #334155;
+            --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
+            --header-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ==========================================================================
+           2. CSS RESET
+           ========================================================================== */
+        *, *::before, *::after {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         html {
@@ -74,499 +150,679 @@
 
         body {
             font-family: var(--font-sans);
-            color: var(--text-main);
-            background-color: var(--background-light);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
             line-height: 1.6;
             overflow-x: hidden;
+            transition: background-color var(--transition-normal), color var(--transition-normal);
         }
 
-        /* ==========================================================================
-           TYPOGRAPHY
-           ========================================================================== */
-        h1, h2, h3, h4, h5, h6 {
-            color: var(--heading-color);
-            line-height: 1.2;
-            margin-bottom: var(--spacing-md);
-            font-weight: 700;
+        img, picture, video, canvas, svg {
+            display: block;
+            max-width: 100%;
+            height: auto;
         }
 
-        h1 {
-            font-size: 2.5rem;
+        input, button, textarea, select {
+            font: inherit;
         }
 
-        h2 {
-            font-size: 2rem;
-            position: relative;
-            padding-bottom: var(--spacing-sm);
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 4px;
-            background-color: var(--primary-color);
-            border-radius: var(--border-radius-sm);
-        }
-
-        h3 {
-            font-size: 1.5rem;
-        }
-
-        p {
-            margin-bottom: var(--spacing-md);
+        p, h1, h2, h3, h4, h5, h6 {
+            overflow-wrap: break-word;
         }
 
         a {
-            color: var(--primary-color);
+            color: var(--accent-primary);
             text-decoration: none;
             transition: color var(--transition-fast);
         }
 
         a:hover {
-            color: var(--primary-hover);
+            color: var(--accent-hover);
             text-decoration: underline;
         }
 
-        strong {
-            font-weight: 600;
+        ul, ol {
+            list-style: none;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
         }
 
         /* ==========================================================================
-           LAYOUT & CONTAINERS
+           3. TYPOGRAPHY & UTILITIES
            ========================================================================== */
+        h1, h2, h3, h4 {
+            line-height: 1.2;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            margin-top: var(--spacing-2xl);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 1.75rem);
+            margin-bottom: var(--spacing-md);
+        }
+
+        p {
+            margin-bottom: var(--spacing-md);
+            color: var(--text-secondary);
+        }
+
         .container {
             width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 var(--spacing-md);
+            max-width: var(--container-max-width);
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: var(--spacing-lg);
+            padding-right: var(--spacing-lg);
         }
 
-        section {
-            padding: var(--spacing-xl) 0;
+        .text-center { text-align: center; }
+        .mt-1 { margin-top: var(--spacing-md); }
+        .mt-2 { margin-top: var(--spacing-lg); }
+        .mt-3 { margin-top: var(--spacing-xl); }
+        .mt-4 { margin-top: var(--spacing-2xl); }
+        .mb-1 { margin-bottom: var(--spacing-md); }
+        .mb-2 { margin-bottom: var(--spacing-lg); }
+        .mb-3 { margin-bottom: var(--spacing-xl); }
+        .mb-4 { margin-bottom: var(--spacing-2xl); }
+        .py-section { padding-top: var(--spacing-4xl); padding-bottom: var(--spacing-4xl); }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            border-radius: var(--border-radius-md);
+            transition: all var(--transition-fast);
+            text-decoration: none !important;
         }
 
-        section:nth-child(even) {
-            background-color: #ffffff;
+        .btn-primary {
+            background-color: var(--accent-primary);
+            color: #ffffff !important;
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.25);
         }
 
-        /* ==========================================================================
-           DISCLAIMER BANNER
-           ========================================================================== */
-        .disclaimer-banner {
-            background-color: var(--disclaimer-bg);
-            color: var(--disclaimer-text);
-            padding: var(--spacing-sm) 0;
-            text-align: center;
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-primary) !important;
+            border: 2px solid var(--border-color);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary) !important;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
             font-size: 0.875rem;
-            font-weight: 500;
-            border-bottom: 1px solid #fcd34d;
+            font-weight: 600;
+            border-radius: 9999px;
+            background-color: var(--accent-light);
+            color: var(--accent-primary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        /* Disclaimer Banner */
+        .disclaimer-banner {
+            background-color: var(--warning-color);
+            color: #fff;
+            text-align: center;
+            padding: var(--spacing-sm) var(--spacing-md);
+            font-size: 0.875rem;
+            font-weight: 600;
+            position: relative;
+            z-index: 1000;
+        }
+
+        .disclaimer-banner a {
+            color: #fff;
+            text-decoration: underline;
         }
 
         /* ==========================================================================
-           HEADER & NAVIGATION
+           4. HEADER & NAVIGATION
            ========================================================================== */
-        header {
-            background-color: var(--card-bg);
-            box-shadow: var(--shadow-sm);
+        .site-header {
             position: sticky;
             top: 0;
-            z-index: 1000;
+            left: 0;
+            width: 100%;
+            background-color: var(--bg-primary);
+            box-shadow: var(--header-shadow);
+            z-index: 999;
+            transition: background-color var(--transition-normal);
         }
 
         .nav-container {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            height: 70px;
+            justify-content: space-between;
+            height: 80px;
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--primary-color);
             display: flex;
             align-items: center;
             gap: var(--spacing-sm);
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            text-decoration: none !important;
         }
 
         .logo svg {
             width: 32px;
             height: 32px;
-            fill: var(--primary-color);
+            fill: var(--accent-primary);
         }
 
         .nav-links {
             display: flex;
+            align-items: center;
             gap: var(--spacing-lg);
-            list-style: none;
         }
 
         .nav-links a {
-            color: var(--text-main);
+            color: var(--text-secondary);
             font-weight: 500;
-            text-decoration: none;
+            font-size: 1rem;
         }
 
         .nav-links a:hover {
-            color: var(--primary-color);
+            color: var(--accent-primary);
             text-decoration: none;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+            transition: all var(--transition-fast);
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--bg-tertiary);
+        }
+
+        .theme-toggle svg {
+            width: 20px;
+            height: 20px;
         }
 
         .mobile-menu-btn {
             display: none;
-            background: none;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 24px;
+            background: transparent;
             border: none;
             cursor: pointer;
-            padding: var(--spacing-sm);
+            z-index: 10;
         }
 
         .mobile-menu-btn span {
             display: block;
-            width: 25px;
+            width: 100%;
             height: 3px;
-            background-color: var(--text-main);
-            margin: 5px 0;
-            transition: var(--transition-fast);
+            background-color: var(--text-primary);
+            border-radius: 2px;
+            transition: all 0.3s linear;
+            transform-origin: 1px;
         }
 
         /* ==========================================================================
-           HERO SECTION
+           5. HERO SECTION
            ========================================================================== */
         .hero {
-            background: linear-gradient(135deg, var(--background-dark) 0%, #1e293b 100%);
-            color: var(--text-inverted);
-            padding: var(--spacing-xxl) 0;
             position: relative;
+            padding-top: var(--spacing-4xl);
+            padding-bottom: var(--spacing-4xl);
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            min-height: 80vh;
         }
 
         .hero::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="rgba(255,255,255,0.05)"/></svg>') repeat;
-            z-index: 1;
+            top: -10%;
+            right: -5%;
+            width: 50vw;
+            height: 50vw;
+            background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, rgba(255,255,255,0) 70%);
+            border-radius: 50%;
+            z-index: -1;
         }
 
         .hero-content {
-            position: relative;
-            z-index: 2;
             max-width: 800px;
-            text-align: center;
             margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
         }
 
-        .hero h1 {
-            color: var(--text-inverted);
-            font-size: 3.5rem;
-            margin-bottom: var(--spacing-lg);
-            animation: fadeInDown 0.8s ease-out;
-        }
-
-        .hero p {
+        .hero-subtitle {
             font-size: 1.25rem;
-            color: #cbd5e1;
-            margin-bottom: var(--spacing-lg);
-            animation: fadeInUp 0.8s ease-out 0.2s both;
+            color: var(--text-muted);
+            margin-bottom: var(--spacing-xl);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .cta-buttons {
+        .hero-actions {
             display: flex;
             gap: var(--spacing-md);
             justify-content: center;
-            animation: fadeInUp 0.8s ease-out 0.4s both;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            border-radius: var(--border-radius-md);
-            font-weight: 600;
-            text-align: center;
-            cursor: pointer;
-            transition: all var(--transition-normal);
-            border: none;
-            text-decoration: none;
-        }
-
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: white;
-            box-shadow: var(--shadow-md);
-        }
-
-        .btn-primary:hover {
-            background-color: var(--primary-hover);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-            color: white;
-            text-decoration: none;
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--text-inverted);
-            border: 2px solid var(--text-inverted);
-        }
-
-        .btn-secondary:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: var(--text-inverted);
-            text-decoration: none;
+            margin-top: var(--spacing-xl);
         }
 
         /* ==========================================================================
-           TABLE OF CONTENTS
-           ========================================================================== */
-        .toc {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius-md);
-            padding: var(--spacing-lg);
-            margin-bottom: var(--spacing-xl);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .toc h3 {
-            margin-top: 0;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: var(--spacing-sm);
-        }
-
-        .toc ul {
-            list-style: none;
-            padding-left: 0;
-            margin-bottom: 0;
-        }
-
-        .toc li {
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .toc a {
-            color: var(--text-main);
-            display: block;
-            padding: var(--spacing-xs) 0;
-        }
-
-        .toc a:hover {
-            color: var(--primary-color);
-            padding-left: var(--spacing-xs);
-        }
-
-        /* ==========================================================================
-           FEATURES GRID
+           6. ABOUT INTEBWIO & FEATURES GRID
            ========================================================================== */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--spacing-lg);
-            margin-top: var(--spacing-lg);
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-2xl);
         }
 
         .feature-card {
-            background-color: var(--card-bg);
+            background-color: var(--bg-primary);
             border: 1px solid var(--border-color);
             border-radius: var(--border-radius-lg);
-            padding: var(--spacing-lg);
+            padding: var(--spacing-xl);
+            box-shadow: var(--card-shadow);
             transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+            position: relative;
+            overflow: hidden;
         }
 
         .feature-card:hover {
             transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: var(--accent-primary);
         }
 
         .feature-icon {
-            width: 48px;
-            height: 48px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            border-radius: var(--border-radius-md);
+            background-color: var(--accent-light);
+            color: var(--accent-primary);
             margin-bottom: var(--spacing-md);
-            color: var(--primary-color);
         }
 
-        .feature-card h3 {
-            margin-bottom: var(--spacing-sm);
+        .feature-icon svg {
+            width: 32px;
+            height: 32px;
+            fill: currentColor;
+        }
+
+        .feature-title {
             font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .feature-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
         }
 
         /* ==========================================================================
-           BENCHMARKS & CHARTS SECTION
+           7. HOW IT WORKS / TECH STACK
            ========================================================================== */
-        .benchmark-section {
-            background-color: var(--background-dark);
-            color: var(--text-inverted);
-        }
-
-        .benchmark-section h2, 
-        .benchmark-section h2::after {
-            color: var(--text-inverted);
-            background-color: var(--secondary-color);
-        }
-
-        .benchmark-container {
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-lg);
-            margin-top: var(--spacing-lg);
-        }
-
-        .chart-wrapper {
-            background-color: rgba(255, 255, 255, 0.05);
-            border-radius: var(--border-radius-lg);
-            padding: var(--spacing-lg);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .chart-title {
-            text-align: center;
-            margin-bottom: var(--spacing-md);
-            font-size: 1.2rem;
-            color: var(--text-inverted);
-        }
-
-        canvas {
-            width: 100% !important;
-            height: 300px !important;
-            display: block;
-        }
-
-        .benchmark-table-wrapper {
-            overflow-x: auto;
-            margin-top: var(--spacing-md);
-        }
-
-        .benchmark-table {
-            width: 100%;
-            border-collapse: collapse;
-            color: var(--text-main);
-            background-color: var(--card-bg);
-            border-radius: var(--border-radius-md);
-            overflow: hidden;
-        }
-
-        .benchmark-table th,
-        .benchmark-table td {
-            padding: var(--spacing-md);
-            text-align: left;
+        .tech-stack-section {
+            background-color: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
             border-bottom: 1px solid var(--border-color);
         }
 
-        .benchmark-table th {
-            background-color: #f1f5f9;
-            font-weight: 600;
+        .tech-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-3xl);
+            align-items: center;
         }
 
-        .benchmark-table tr:last-child td {
-            border-bottom: none;
+        .tech-list {
+            list-style: none;
+            margin-top: var(--spacing-lg);
         }
 
-        .benchmark-table tr:hover td {
-            background-color: #f8fafc;
+        .tech-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
         }
 
-        .winner-cell {
-            color: var(--secondary-color);
-            font-weight: bold;
+        .tech-list-icon {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            color: var(--success-color);
         }
 
         /* ==========================================================================
-           PROS & CONS SECTION
+           8. CHART SECTION (CANVAS)
+           ========================================================================== */
+        .chart-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-xl);
+            box-shadow: var(--card-shadow);
+        }
+
+        #perfChart {
+            width: 100%;
+            height: 300px;
+        }
+
+        /* ==========================================================================
+           9. PROS AND CONS
            ========================================================================== */
         .pros-cons-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-lg);
-            margin-top: var(--spacing-lg);
+            gap: var(--spacing-2xl);
+            margin-top: var(--spacing-2xl);
         }
 
         .pros-box, .cons-box {
-            background-color: var(--card-bg);
+            background-color: var(--bg-secondary);
             border-radius: var(--border-radius-lg);
-            padding: var(--spacing-lg);
-            box-shadow: var(--shadow-sm);
+            padding: var(--spacing-xl);
+            border: 1px solid var(--border-color);
         }
 
-        .pros-box {
-            border-top: 4px solid var(--secondary-color);
+        .pros-box h3 {
+            color: var(--success-color);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
         }
 
-        .cons-box {
-            border-top: 4px solid #ef4444;
+        .cons-box h3 {
+            color: var(--danger-color);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
         }
 
-        .pros-cons-list {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .pros-cons-list li {
+        .pros-list li, .cons-list li {
             position: relative;
-            padding-left: 2rem;
+            padding-left: 1.5rem;
             margin-bottom: var(--spacing-sm);
+            color: var(--text-secondary);
         }
 
-        .pros-box .pros-cons-list li::before {
+        .pros-list li::before {
             content: '✓';
             position: absolute;
             left: 0;
-            color: var(--secondary-color);
+            color: var(--success-color);
             font-weight: bold;
-            font-size: 1.2rem;
         }
 
-        .cons-box .pros-cons-list li::before {
+        .cons-list li::before {
             content: '✕';
             position: absolute;
             left: 0;
-            color: #ef4444;
+            color: var(--danger-color);
             font-weight: bold;
-            font-size: 1.2rem;
         }
 
         /* ==========================================================================
-           FAQ ACCORDION
+           10. INTERACTIVE MOCK DEMO
+           ========================================================================== */
+        .demo-section {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+            border-radius: var(--border-radius-xl);
+            padding: var(--spacing-3xl) var(--spacing-xl);
+            text-align: center;
+            margin-top: var(--spacing-4xl);
+            border: 1px solid var(--border-color);
+        }
+
+        .demo-window {
+            background-color: var(--bg-primary);
+            border-radius: var(--border-radius-md);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--card-shadow);
+            max-width: 800px;
+            margin: var(--spacing-xl) auto 0;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .demo-header {
+            background-color: var(--bg-secondary);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            gap: 6px;
+        }
+
+        .demo-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .demo-dot.red { background-color: #ff5f56; }
+        .demo-dot.yellow { background-color: #ffbd2e; }
+        .demo-dot.green { background-color: #27c93f; }
+
+        .demo-body {
+            padding: var(--spacing-xl);
+            min-height: 300px;
+        }
+
+        .demo-input-group {
+            display: flex;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .demo-input {
+            flex-grow: 1;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-md);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        .demo-input:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px var(--accent-light);
+        }
+
+        .demo-output-area {
+            border: 1px dashed var(--border-color);
+            border-radius: var(--border-radius-md);
+            padding: var(--spacing-lg);
+            background-color: var(--bg-secondary);
+            min-height: 200px;
+            position: relative;
+        }
+
+        .spinner {
+            display: none;
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--border-color);
+            border-top: 4px solid var(--accent-primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 2rem auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .generated-content {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .skeleton-line {
+            height: 12px;
+            background-color: var(--border-color);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+        .skeleton-line:last-child { width: 60%; }
+
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+
+        /* ==========================================================================
+           11. COMPARISON TABLE
+           ========================================================================== */
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: var(--spacing-xl);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            background-color: var(--bg-primary);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+
+        .comparison-table th, .comparison-table td {
+            padding: var(--spacing-md) var(--spacing-lg);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comparison-table th {
+            background-color: var(--bg-secondary);
+            font-weight: 700;
+            color: var(--text-primary);
+            white-space: nowrap;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:hover {
+            background-color: var(--bg-tertiary);
+        }
+
+        .highlight-col {
+            background-color: var(--accent-light) !important;
+            border-left: 2px solid var(--accent-primary);
+            border-right: 2px solid var(--accent-primary);
+        }
+
+        .comparison-table th.highlight-col {
+            background-color: var(--accent-primary) !important;
+            color: #fff;
+            border: none;
+        }
+
+        /* ==========================================================================
+           12. FAQ ACCORDION
            ========================================================================== */
         .faq-container {
             max-width: 800px;
-            margin: var(--spacing-lg) auto 0;
+            margin: var(--spacing-2xl) auto 0;
         }
 
         .accordion-item {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius-md);
+            border-bottom: 1px solid var(--border-color);
             margin-bottom: var(--spacing-sm);
-            overflow: hidden;
         }
 
         .accordion-header {
             width: 100%;
             text-align: left;
-            padding: var(--spacing-md);
-            background: none;
-            border: none;
-            font-size: 1.1rem;
+            padding: var(--spacing-md) 0;
+            font-size: 1.125rem;
             font-weight: 600;
-            color: var(--heading-color);
-            cursor: pointer;
+            color: var(--text-primary);
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: background-color var(--transition-fast);
+            cursor: pointer;
         }
 
         .accordion-header:hover {
-            background-color: #f8fafc;
+            color: var(--accent-primary);
         }
 
         .accordion-icon {
+            width: 20px;
+            height: 20px;
             transition: transform var(--transition-normal);
+            flex-shrink: 0;
         }
 
         .accordion-item.active .accordion-icon {
@@ -577,135 +833,139 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height var(--transition-normal);
-            background-color: #ffffff;
         }
 
-        .accordion-content-inner {
-            padding: 0 var(--spacing-md) var(--spacing-md);
-            color: var(--text-main);
+        .accordion-body {
+            padding-bottom: var(--spacing-md);
+            color: var(--text-secondary);
+            line-height: 1.6;
         }
 
         /* ==========================================================================
-           FOOTER
+           13. FOOTER
            ========================================================================== */
-        footer {
-            background-color: var(--background-dark);
-            color: var(--text-light);
-            padding: var(--spacing-xl) 0 var(--spacing-md);
+        .site-footer {
+            background-color: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding-top: var(--spacing-3xl);
+            padding-bottom: var(--spacing-xl);
+            margin-top: var(--spacing-4xl);
         }
 
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--spacing-lg);
-            margin-bottom: var(--spacing-lg);
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: var(--spacing-2xl);
+            margin-bottom: var(--spacing-2xl);
         }
 
-        .footer-col h4 {
-            color: var(--text-inverted);
+        .footer-about p {
+            margin-top: var(--spacing-md);
+            color: var(--text-muted);
+            max-width: 400px;
+        }
+
+        .footer-links h4 {
             margin-bottom: var(--spacing-md);
+            font-size: 1.125rem;
         }
 
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
+        .footer-links ul li {
             margin-bottom: var(--spacing-sm);
         }
 
-        .footer-links a {
-            color: var(--text-light);
+        .footer-links ul li a {
+            color: var(--text-muted);
         }
 
-        .footer-links a:hover {
-            color: var(--primary-color);
+        .footer-links ul li a:hover {
+            color: var(--accent-primary);
         }
 
         .footer-bottom {
+            border-top: 1px solid var(--border-color);
+            padding-top: var(--spacing-xl);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-md);
             text-align: center;
-            padding-top: var(--spacing-md);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-disclaimer {
             font-size: 0.875rem;
+            color: var(--text-muted);
+            max-width: 800px;
         }
 
         /* ==========================================================================
-           ANIMATIONS
-           ========================================================================== */
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* ==========================================================================
-           RESPONSIVE MEDIA QUERIES (RWD)
+           14. MEDIA QUERIES (RESPONSIVENESS)
            ========================================================================== */
         @media (max-width: 992px) {
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.75rem; }
-            
-            .pros-cons-grid {
+            .tech-grid, .pros-cons-grid {
                 grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
             }
         }
 
         @media (max-width: 768px) {
             .nav-links {
-                display: none; /* Hide default nav */
-                position: absolute;
-                top: 70px;
-                left: 0;
+                position: fixed;
+                top: 80px;
+                left: -100%;
                 width: 100%;
-                background-color: var(--card-bg);
+                height: calc(100vh - 80px);
+                background-color: var(--bg-primary);
                 flex-direction: column;
-                padding: var(--spacing-md);
-                box-shadow: var(--shadow-md);
-                gap: var(--spacing-md);
+                justify-content: flex-start;
+                padding-top: var(--spacing-2xl);
+                transition: left var(--transition-normal);
             }
-
+            
             .nav-links.active {
-                display: flex;
+                left: 0;
             }
 
             .mobile-menu-btn {
-                display: block;
+                display: flex;
             }
 
-            .hero {
-                padding: var(--spacing-xl) 0;
+            .mobile-menu-btn.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .mobile-menu-btn.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .mobile-menu-btn.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
             }
 
             .hero h1 {
-                font-size: 1.75rem;
+                font-size: 2.5rem;
             }
 
-            .cta-buttons {
-                flex-direction: column;
-            }
-
-            .features-grid {
+            .footer-grid {
                 grid-template-columns: 1fr;
             }
-            
-            section {
-                padding: var(--spacing-lg) 0;
+
+            .demo-input-group {
+                flex-direction: column;
             }
         }
 
-        @media (max-width: 480px) {
-            :root {
-                --spacing-lg: 1.5rem;
-                --spacing-xl: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-            }
+        /* Scroll Reveal Utility Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -713,417 +973,494 @@
 
     <!-- DISCLAIMER BANNER -->
     <div class="disclaimer-banner">
-        <strong>Independent Review Notice:</strong> This website is an independent technical review. We are NOT affiliated with, sponsored by, or connected to the Intebwio browser or its development team.
+        Please note: This is an independent review by TechBlogOfApps. We are not connected, affiliated, or endorsed by Intebwio or its creator. For official information, visit <a href="https://intebwio.com/" target="_blank" rel="noopener noreferrer">intebwio.com</a>.
     </div>
 
-    <!-- HEADER / NAVIGATION -->
-    <header>
+    <!-- HEADER -->
+    <header class="site-header">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <!-- SVG Logo -->
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <!-- Inline SVG Logo -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                 </svg>
-                Intebwio Review
+                TechBlogOfApps
             </a>
             
-            <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#overview">Overview</a>
+                <a href="#features">Features</a>
+                <a href="#performance">Performance</a>
+                <a href="#demo">Interactive Demo</a>
+                <a href="#comparison">Comparison</a>
+                <a href="#faq">FAQ</a>
+            </nav>
 
-            <ul class="nav-links">
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#features">Key Features</a></li>
-                <li><a href="#benchmarks">Benchmarks</a></li>
-                <li><a href="#pros-cons">Pros & Cons</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+                    <!-- Moon Icon for Default -->
+                    <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                    <!-- Sun Icon hidden initially -->
+                    <svg id="sunIcon" style="display:none;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero" id="home">
-        <div class="container hero-content">
-            <h1>Intebwio Browser: The Ultimate Independent Review for 2026</h1>
-            <p>Welcome to the most comprehensive, unbiased deep-dive into the intebwio browser. We analyze its speed, security, UI, and how it stacks up against industry giants like Chrome, Firefox, and Brave.</p>
-            <div class="cta-buttons">
-                <a href="#overview" class="btn btn-primary">Read the Full Review</a>
-                <a href="#benchmarks" class="btn btn-secondary">Jump to Benchmarks</a>
-            </div>
-        </div>
-    </section>
-
     <!-- MAIN CONTENT -->
-    <main class="container">
-        
-        <section style="padding-top: var(--spacing-xl); padding-bottom: 0;">
-            <!-- TABLE OF CONTENTS -->
-            <div class="toc">
-                <h3>Table of Contents</h3>
-                <ul>
-                    <li><a href="#overview">1. Introduction & Overview</a></li>
-                    <li><a href="#features">2. Deep Dive: Key Features</a></li>
-                    <li><a href="#privacy">3. Privacy & Security Analysis</a></li>
-                    <li><a href="#benchmarks">4. Performance Benchmarks</a></li>
-                    <li><a href="#pros-cons">5. Pros and Cons</a></li>
-                    <li><a href="#faq">6. Frequently Asked Questions</a></li>
-                </ul>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="overview">
+            <div class="container hero-content reveal">
+                <span class="badge">Independent Review 2026</span>
+                <h1>Intebwio Review: The AI Browser That Writes Itself</h1>
+                <p class="hero-subtitle">
+                    Created by Yaroslav Ostapenko, Intebwio claims to be a "synthesis engine" that doesn't just search the web—it generates custom, ad-free landing pages tailored to your exact query. Does it live up to the hype?
+                </p>
+                <div class="hero-actions">
+                    <a href="#features" class="btn btn-primary">Read the Deep Dive</a>
+                    <a href="#demo" class="btn btn-outline">Try Mock Demo</a>
+                </div>
             </div>
         </section>
 
-        <!-- OVERVIEW SECTION -->
-        <section id="overview">
-            <h2>1. Introduction & Overview of Intebwio</h2>
-            <p>The browser market is notoriously difficult to penetrate. With heavyweights dominating desktop and mobile spheres, any newcomer must offer something genuinely revolutionary. Enter <strong>intebwio</strong>, a relatively new contender making waves in technical forums and privacy-advocate circles. As an independent tech blog, we felt it was our duty to rigorously test intebwio and separate the marketing hype from reality.</p>
-            
-            <p>Intebwio positions itself as a "next-generation, resource-efficient web navigator." Built on a highly modified rendering engine (incorporating elements of modern web standards with aggressive background script throttling), it aims to solve the eternal problem of modern browsers: extreme RAM consumption and battery drain on laptops.</p>
-            
-            <p>In this review, we are strictly looking at the desktop version (Windows/macOS/Linux) currently available, testing it on a standard developer machine environment. We will cover its unique tab management, built-in tracker blocking, and developer tool suite. Remember, we are not connected with the intebwio team in any way; this is a purely objective technical analysis.</p>
+        <!-- Features Section -->
+        <section class="py-section" id="features">
+            <div class="container">
+                <div class="text-center reveal">
+                    <h2>Core Features of Intebwio</h2>
+                    <p class="hero-subtitle">We tested the primary claims of the Intebwio browser. Here is a breakdown of what makes this generative web engine unique compared to traditional search.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3 class="feature-title">Generates Perfect Pages</h3>
+                        <p class="feature-desc">Intebwio is not a search engine; it's a synthesis engine. Instead of providing 10 blue links, the AI (powered by LLMs like Gemini) scans the web, picks the best info, and builds a complete webpage from scratch.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+                        </div>
+                        <h3 class="feature-title">100% Ad-Free UI</h3>
+                        <p class="feature-desc">Because the page is dynamically generated on the Intebwio platform, it completely strips away SEO-optimized filler, intrusive advertisements, and pop-ups, leaving a clean reading experience.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+                        </div>
+                        <h3 class="feature-title">Anti-Duplicate System</h3>
+                        <p class="feature-desc">Intebwio checks its database to prevent creating duplicates for queries with the same meaning. Once generated, pages are saved permanently to optimize global performance.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+                        </div>
+                        <h3 class="feature-title">Weekly Updates</h3>
+                        <p class="feature-desc">The AI web scraping system automatically updates saved pages every week to ensure that the information remains accurate in the face of a constantly changing internet.</p>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+                        </div>
+                        <h3 class="feature-title">Data Visualizations</h3>
+                        <p class="feature-desc">It doesn't just output raw text. The engine generates UI elements dynamically, including custom data visualizations, tables, buttons, and charts for an enhanced user interface.</p>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                        </div>
+                        <h3 class="feature-title">Transparency & Safety</h3>
+                        <p class="feature-desc">As noted in their Terms of Service, Intebwio acknowledges the risk of AI "hallucinations" and sets clear boundaries, warning users not to rely on it for critical medical or legal advice.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- FEATURES SECTION -->
-        <section id="features">
-            <h2>2. Deep Dive: Key Features</h2>
-            <p>What makes the intebwio browser stand out? Our extensive testing revealed several core functionalities that set it apart from typical Chromium clones.</p>
-            
-            <div class="features-grid">
-                <!-- Feature 1 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
-                        </svg>
-                    </div>
-                    <h3>Smart Workspace Grouping</h3>
-                    <p>Unlike standard tab groups, intebwio uses a "Contextual Workspace" system. It automatically categorizes tabs based on the domain and user activity (e.g., "Work", "Social", "Research"). You can freeze entire workspaces to save RAM with a single click, which is a massive boon for power users who keep 50+ tabs open.</p>
+        <!-- Tech Stack & Performance Section -->
+        <section class="py-section tech-stack-section" id="performance">
+            <div class="container tech-grid">
+                <div class="reveal">
+                    <h2>Under the Hood: Architecture & Tech Stack</h2>
+                    <p>According to the developer's portfolio, Intebwio is built using a modern, robust stack. The integration of artificial intelligence with classic relational databases creates a highly scalable system.</p>
+                    <ul class="tech-list">
+                        <li>
+                            <svg class="tech-list-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <div>
+                                <strong>Frontend:</strong> Built with React and Vite, ensuring lightning-fast client-side rendering for the dynamically generated user interfaces.
+                            </div>
+                        </li>
+                        <li>
+                            <svg class="tech-list-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <div>
+                                <strong>Backend:</strong> Powered by PHP and MySQL. This handles the complex database logic for checking duplicate queries and storing generated pages permanently.
+                            </div>
+                        </li>
+                        <li>
+                            <svg class="tech-list-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <div>
+                                <strong>AI Engine:</strong> Utilizes advanced LLMs (like Google's Gemini) integrated via API for web scraping, summarizing content, and orchestrating the final output.
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+                <div class="reveal chart-container">
+                    <h3 class="text-center">Time to Information: Search vs Synthesis</h3>
+                    <p class="text-center" style="font-size: 0.875rem;">Estimated seconds spent finding an answer.</p>
+                    <!-- Canvas Chart drawn via JS -->
+                    <canvas id="perfChart"></canvas>
+                </div>
+            </div>
+        </section>
 
-                <!-- Feature 2 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                        </svg>
+        <!-- Pros and Cons -->
+        <section class="py-section">
+            <div class="container reveal">
+                <h2 class="text-center">Intebwio Pros & Cons</h2>
+                <div class="pros-cons-grid">
+                    <div class="pros-box">
+                        <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> The Good</h3>
+                        <ul class="pros-list">
+                            <li>Completely ad-free and distraction-free environment.</li>
+                            <li>Saves immense time by synthesizing multiple sources into one page.</li>
+                            <li>The caching system (preventing duplicates) makes repeat queries instant.</li>
+                            <li>Dynamic UI generation (charts/tables) is highly innovative.</li>
+                            <li>Weekly updates ensure the synthesized data does not go stale.</li>
+                        </ul>
                     </div>
-                    <h3>Native Ad & Tracker Blocking</h3>
-                    <p>The browser ships with "ShieldGuard" enabled by default. It relies on a continually updated filter list similar to uBlock Origin, but because it's compiled directly into the network request layer of the browser, it operates with significantly lower CPU overhead compared to standard extension-based blockers.</p>
+                    <div class="cons-box">
+                        <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/></svg> The Bad</h3>
+                        <ul class="cons-list">
+                            <li>Risk of AI hallucinations (inaccurate information).</li>
+                            <li>First-time queries might take a few seconds longer than a traditional search engine to generate.</li>
+                            <li>Takes traffic away from original creators by scraping and summarizing.</li>
+                            <li>Not suitable for critical legal, medical, or financial research as per their own ToS.</li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Feature 3 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
-                        </svg>
-                    </div>
-                    <h3>Decentralized Sync Protocol</h3>
-                    <p>To sync bookmarks, passwords, and history, intebwio does not rely on a central corporate server. Instead, it utilizes an end-to-end encrypted peer-to-peer sync protocol. You pair devices via a secure QR code or passphrase, ensuring your data never rests on a server you don't control.</p>
-                </div>
+        <!-- Interactive Demo Simulation -->
+        <section class="demo-section" id="demo">
+            <div class="container reveal">
+                <h2>Experience the "Browser That Writes Itself"</h2>
+                <p class="hero-subtitle" style="color:var(--text-primary);">Type a query below to see a simulation of how Intebwio generates a custom web page instantly.</p>
                 
-                <!-- Feature 4 -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                        </svg>
+                <div class="demo-window">
+                    <div class="demo-header">
+                        <div class="demo-dot red"></div>
+                        <div class="demo-dot yellow"></div>
+                        <div class="demo-dot green"></div>
                     </div>
-                    <h3>Advanced DevTools Integration</h3>
-                    <p>For developers, the browser integrates a specialized CSS Grid visualizer and an API payload interceptor right out of the box. It also includes a native JSON formatter that is drastically faster than Chrome's default, handling massive 50MB+ JSON payloads without crashing.</p>
+                    <div class="demo-body">
+                        <div class="demo-input-group">
+                            <input type="text" id="demoInput" class="demo-input" placeholder="e.g. 'The history of electric cars' or 'Compare React vs Vue'">
+                            <button id="demoBtn" class="btn btn-primary">Generate Page</button>
+                        </div>
+                        
+                        <div class="demo-output-area" id="demoOutputArea">
+                            <!-- Default State -->
+                            <div id="demoDefault" class="text-center" style="padding-top: 3rem; color: var(--text-muted);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 1rem; opacity: 0.5;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                <p>Awaiting your prompt. The engine is ready to synthesize.</p>
+                            </div>
+                            
+                            <!-- Loading Spinner -->
+                            <div id="demoSpinner" class="spinner"></div>
+                            <div id="demoLoadingText" class="text-center mt-1" style="display: none; color: var(--accent-primary); font-weight: 600;">
+                                Synthesizing data... Scanning sources...
+                            </div>
+                            
+                            <!-- Generated Content -->
+                            <div id="demoResult" class="generated-content">
+                                <h3 id="demoResultTitle" style="margin-bottom: 0.5rem;">Title</h3>
+                                <div class="badge">Synthesized by AI</div>
+                                <p id="demoResultText" style="margin-bottom: 1rem;"></p>
+                                
+                                <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                                    <div style="flex: 1; padding: 1rem; background: var(--bg-tertiary); border-radius: 8px;">
+                                        <div class="skeleton-line"></div>
+                                        <div class="skeleton-line"></div>
+                                        <div class="skeleton-line"></div>
+                                    </div>
+                                    <div style="flex: 1; padding: 1rem; background: var(--bg-tertiary); border-radius: 8px;">
+                                        <div class="skeleton-line"></div>
+                                        <div class="skeleton-line"></div>
+                                        <div class="skeleton-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- PRIVACY SECTION -->
-        <section id="privacy">
-            <h2>3. Privacy & Security Analysis</h2>
-            <p>In 2026, a web browser is only as good as the privacy it affords its users. When reviewing intebwio, we placed a heavy emphasis on testing its anti-fingerprinting and data collection policies.</p>
-            
-            <p><strong>Anti-Fingerprinting:</strong> Intebwio utilizes canvas randomization and audio context spoofing by default. We ran it through several rigorous fingerprinting test suites (like Cover Your Tracks) and found that it successfully mitigates unique device identification. It generalizes your user-agent and restricts font enumeration.</p>
-            
-            <p><strong>Telemetry:</strong> Many modern browsers, even the "private" ones, collect aggregate telemetry data. Our independent network analysis using Wireshark confirmed that intebwio makes zero unprompted outbound connections to telemetry servers upon startup. The only network requests initiated are for updating the tracker blocklists and certificate revocation lists, both of which can be configured to route through a proxy.</p>
-            
-            <p><strong>Container Isolation:</strong> Similar to Firefox's Multi-Account Containers, intebwio offers strictly isolated cookie jars. If you log into a social network in one tab, it cannot read cookies or local storage from a tab in a different container, effectively neutralizing cross-site tracking via local data storage.</p>
-        </section>
-    </main>
-
-    <!-- BENCHMARKS SECTION -->
-    <section id="benchmarks" class="benchmark-section">
-        <div class="container">
-            <h2>4. Performance Benchmarks</h2>
-            <p>We subjected intebwio to a suite of industry-standard benchmarks alongside Chrome, Firefox, and Brave. The testing rig featured an Intel i7-13700K, 32GB DDR5 RAM, and a Gen4 NVMe SSD running Windows 11.</p>
-            
-            <div class="benchmark-container">
-                <!-- JavaScript Canvas Chart (Rendered via JS) -->
-                <div class="chart-wrapper">
-                    <h3 class="chart-title">Speedometer 3.0 Score (Higher is Better)</h3>
-                    <canvas id="speedometerChart" aria-label="Bar chart showing Speedometer 3.0 scores" role="img"></canvas>
-                </div>
-
-                <!-- RAM Usage Chart -->
-                <div class="chart-wrapper">
-                    <h3 class="chart-title">RAM Usage with 20 Tabs Open (Lower is Better - MB)</h3>
-                    <canvas id="ramChart" aria-label="Bar chart showing RAM usage" role="img"></canvas>
-                </div>
-
-                <!-- Detailed Table -->
-                <div class="benchmark-table-wrapper">
-                    <table class="benchmark-table">
+        <!-- Comparison Table -->
+        <section class="py-section" id="comparison">
+            <div class="container reveal">
+                <h2 class="text-center">How Intebwio Compares</h2>
+                <div class="table-responsive">
+                    <table class="comparison-table">
                         <thead>
                             <tr>
-                                <th>Test / Metric</th>
-                                <th>Intebwio</th>
-                                <th>Chrome</th>
-                                <th>Firefox</th>
-                                <th>Brave</th>
+                                <th>Feature</th>
+                                <th>Traditional Browsers (Chrome/Edge)</th>
+                                <th>AI Search Engines (Perplexity)</th>
+                                <th class="highlight-col">Intebwio Browser</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Cold Start Time</td>
-                                <td class="winner-cell">0.8s</td>
-                                <td>1.2s</td>
-                                <td>1.5s</td>
-                                <td>1.1s</td>
+                                <td><strong>Core Function</strong></td>
+                                <td>Provides links to existing websites.</td>
+                                <td>Provides conversational answers with citations.</td>
+                                <td class="highlight-col">Generates a full structured webpage (UI/UX).</td>
                             </tr>
                             <tr>
-                                <td>Octane 2.0 Score</td>
-                                <td>82,400</td>
-                                <td class="winner-cell">85,100</td>
-                                <td>79,000</td>
-                                <td>84,500</td>
+                                <td><strong>Ads & Trackers</strong></td>
+                                <td>High (dependent on visited sites).</td>
+                                <td>Low/Medium.</td>
+                                <td class="highlight-col">100% Ad-Free (Engineered out).</td>
                             </tr>
                             <tr>
-                                <td>HTML5Test Score</td>
-                                <td>540/555</td>
-                                <td class="winner-cell">545/555</td>
-                                <td>535/555</td>
-                                <td>545/555</td>
+                                <td><strong>UI Generation</strong></td>
+                                <td>None. Renders external HTML.</td>
+                                <td>Basic text formatting & markdown.</td>
+                                <td class="highlight-col">Creates custom charts, tables, buttons.</td>
                             </tr>
                             <tr>
-                                <td>Battery Drain (1 hr 4K Video)</td>
-                                <td class="winner-cell">8%</td>
-                                <td>12%</td>
-                                <td>11%</td>
-                                <td>10%</td>
+                                <td><strong>Content Freshness</strong></td>
+                                <td>Real-time index.</td>
+                                <td>Real-time.</td>
+                                <td class="highlight-col">Weekly automated scraping updates.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>SEO Clutter</strong></td>
+                                <td>High (SEO optimized articles rank first).</td>
+                                <td>Moderate.</td>
+                                <td class="highlight-col">Zero (Strips out SEO filler completely).</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <p style="margin-top: var(--spacing-md); font-size: 0.9rem; color: #cbd5e1;">* Note: Results may vary based on your hardware configuration and operating system background tasks. Intebwio clearly excels in resource management, though Chrome slightly edges it out in raw V8 JavaScript execution speeds.</p>
-        </div>
-    </section>
-
-    <!-- PROS AND CONS SECTION -->
-    <main class="container">
-        <section id="pros-cons">
-            <h2>5. Pros and Cons</h2>
-            <p>No software is perfect. Based on our extensive evaluation, here is our objective breakdown of the intebwio browser's strengths and weaknesses.</p>
-            
-            <div class="pros-cons-grid">
-                <div class="pros-box">
-                    <h3>Pros</h3>
-                    <ul class="pros-cons-list">
-                        <li><strong>Exceptional RAM Management:</strong> Automatically freezes inactive tabs efficiently.</li>
-                        <li><strong>Unmatched Privacy:</strong> Zero telemetry out-of-the-box and excellent fingerprinting resistance.</li>
-                        <li><strong>P2P Syncing:</strong> Securely syncs data across devices without relying on third-party cloud servers.</li>
-                        <li><strong>Fast Cold Starts:</strong> Boot times are remarkably swift even with extensions loaded.</li>
-                        <li><strong>Clean UI:</strong> The minimalist interface is highly customizable without feeling cluttered.</li>
-                    </ul>
-                </div>
-                
-                <div class="cons-box">
-                    <h3>Cons</h3>
-                    <ul class="cons-box pros-cons-list" style="border:none; padding:0; box-shadow:none;">
-                        <li><strong>Extension Compatibility:</strong> While it supports most Chromium extensions, deeply integrated ones sometimes break.</li>
-                        <li><strong>No Built-in Translation:</strong> Lacks a native web page translation tool comparable to Chrome's.</li>
-                        <li><strong>Niche Community:</strong> Finding troubleshooting guides or community support is harder compared to mainstream browsers.</li>
-                        <li><strong>DRM Content:</strong> Playing certain high-tier DRM streams (like 4k Netflix) requires manual toggles in settings.</li>
-                        <li><strong>Mobile App Missing:</strong> As of this review, the iOS/Android companion apps are still in closed beta.</li>
-                    </ul>
-                </div>
-            </div>
         </section>
 
-        <!-- FAQ SECTION -->
-        <section id="faq">
-            <h2>6. Frequently Asked Questions</h2>
-            <p>We receive many questions about switching to lesser-known browsers. Here are the most common inquiries regarding intebwio, answered objectively.</p>
-            
-            <div class="faq-container">
-                
-                <!-- FAQ Item 1 -->
-                <div class="accordion-item">
-                    <button class="accordion-header" aria-expanded="false">
-                        Is Intebwio safe to use as my daily driver?
-                        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-content-inner">
-                            <p>Yes. Despite being a newer entrant, intebwio relies on highly audited core components. Its aggressive approach to blocking malicious scripts and isolating trackers actually makes it safer for the average user compared to a default installation of mainstream browsers. However, always ensure you download it from official sources to avoid malware.</p>
+        <!-- FAQ Section -->
+        <section class="py-section" id="faq">
+            <div class="container reveal">
+                <h2 class="text-center">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            What exactly is Intebwio?
+                            <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                Intebwio is a revolutionary AI-powered web browser platform. Instead of acting as a traditional search engine that gives you a list of links, it acts as a "synthesis engine." You enter a query, and if the page doesn't exist, the AI will scrape the web, synthesize the best information, and build a customized, ad-free landing page for you.
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- FAQ Item 2 -->
-                <div class="accordion-item">
-                    <button class="accordion-header" aria-expanded="false">
-                        Can I install Chrome extensions on Intebwio?
-                        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-content-inner">
-                            <p>For the most part, yes. Intebwio has a compatibility layer that allows you to install extensions from standard web stores. In our testing, about 95% of extensions worked perfectly. The ones that failed were usually those requiring deep OS-level integration or specific Google API services that intebwio intentionally blocks for privacy reasons.</p>
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            Who created Intebwio?
+                            <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                Intebwio was created by Yaroslav Ostapenko, an ambitious 18-year-old Junior Frontend Developer from Ukraine. He developed the platform utilizing React, Vite, PHP, and MySQL alongside advanced LLM integrations like Google's Gemini.
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- FAQ Item 3 -->
-                <div class="accordion-item">
-                    <button class="accordion-header" aria-expanded="false">
-                        How does it make money if it's free and doesn't collect data?
-                        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-content-inner">
-                            <p>As an independent review site, we looked into their funding model. Intebwio operates primarily on a freemium model. The core browser is completely free and open-source. They generate revenue by offering optional, paid premium features like an integrated VPN service and priority technical support for enterprise deployments.</p>
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            Is Intebwio completely free of advertisements?
+                            <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                Yes. Because the content is generated specifically for you on their platform, Intebwio strips out the traditional internet "noise." There are no banner ads, no pop-ups, and no SEO-filler paragraphs designed to game algorithms.
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- FAQ Item 4 -->
-                <div class="accordion-item">
-                    <button class="accordion-header" aria-expanded="false">
-                        Does Intebwio support Web3 or crypto wallets natively?
-                        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-content-inner">
-                            <p>No, and the developers have explicitly stated they prefer to keep the browser lightweight. Unlike Brave, which heavily integrates crypto features, intebwio requires you to install third-party extensions if you wish to interact with Web3 dApps. For purists who dislike software bloat, this is considered a significant advantage.</p>
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            How does it handle duplicate queries?
+                            <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                To save computational resources and speed up delivery, Intebwio checks its database for semantically similar queries. If a page for "history of cars" already exists, it won't generate a new one from scratch. Instead, it serves the cached page, which is automatically updated weekly via AI web scraping.
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- FAQ Item 5 -->
-                <div class="accordion-item">
-                    <button class="accordion-header" aria-expanded="false">
-                        How do I import my bookmarks from Firefox or Chrome?
-                        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-content-inner">
-                            <p>Upon first launch, intebwio offers a seamless import wizard. It can automatically detect standard browser profiles on your machine and import bookmarks, history, and passwords. Alternatively, you can import standard HTML bookmark files exported from any other browser.</p>
+                    <!-- FAQ 5 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            Can Intebwio make mistakes?
+                            <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                Absolutely. Like all generative AI models, Intebwio can "hallucinate" or provide inaccurate information. According to their official Terms of Service, users should not rely on generated content for medical, legal, financial, or other critical professional advice.
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </section>
     </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>About This Site</h4>
-                    <p>TechBlogOfApps is an independent technology review platform dedicated to providing unbiased, deeply technical analyses of emerging software, applications, and web tools.</p>
+                <div class="footer-about">
+                    <a href="#" class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                        TechBlogOfApps
+                    </a>
+                    <p>Dedicated to reviewing the most innovative software, web apps, and AI platforms of tomorrow. Our in-depth, independent reviews help users navigate the fast-changing tech landscape.</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
                         <li><a href="#overview">Overview</a></li>
-                        <li><a href="#benchmarks">Benchmarks</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#performance">Performance</a></li>
+                        <li><a href="#demo">Demo Simulation</a></li>
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Legal & Disclaimer</h4>
-                    <p style="font-size: 0.85rem; line-height: 1.4;">
-                        This page is an independent review and is not affiliated with, endorsed by, or sponsored by intebwio or its parent entity. All trademarks and registered trademarks are the property of their respective owners.
-                    </p>
+                <div class="footer-links">
+                    <h4>External Links</h4>
+                    <ul>
+                        <li><a href="https://intebwio.com/" target="_blank" rel="noopener noreferrer">Official Intebwio Website</a></li>
+                        <li><a href="https://intebwio.com/about" target="_blank" rel="noopener noreferrer">About Intebwio</a></li>
+                        <li><a href="https://intebwio.github.io/intebwio/" target="_blank" rel="noopener noreferrer">Intebwio GitHub</a></li>
+                    </ul>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2026 TechBlogOfApps. All rights reserved. Canonical review page for Intebwio browser.</p>
+                <p class="footer-disclaimer">
+                    <strong>Disclaimer:</strong> This website is an independent review and informational portal created by TechBlogOfApps. 
+                    We are <strong>NOT</strong> connected with, sponsored by, or affiliated with the Intebwio browser, Intebwio.com, or Yaroslav Ostapenko. 
+                    All product names, logos, and brands are property of their respective owners.
+                </p>
+                <p>&copy; <span id="year"></span> TechBlogOfApps. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- ==========================================================================
-         JAVASCRIPT
-         ========================================================================== -->
+    <!-- JAVASCRIPT LOGIC -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             
-            // 1. Mobile Menu Toggle
-            const mobileBtn = document.querySelector('.mobile-menu-btn');
-            const navLinks = document.querySelector('.nav-links');
+            // 1. Set Current Year in Footer
+            document.getElementById('year').textContent = new Date().getFullYear();
 
-            mobileBtn.addEventListener('click', () => {
+            // 2. Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            mobileMenuBtn.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
-                // Animate hamburger icon
-                const spans = mobileBtn.querySelectorAll('span');
-                if (navLinks.classList.contains('active')) {
-                    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                    spans[1].style.opacity = '0';
-                    spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-                } else {
-                    spans[0].style.transform = 'none';
-                    spans[1].style.opacity = '1';
-                    spans[2].style.transform = 'none';
-                }
+                mobileMenuBtn.classList.toggle('active');
             });
 
-            // Close mobile menu when clicking a link
-            navLinks.querySelectorAll('a').forEach(link => {
+            // Close mobile menu on link click
+            document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', () => {
-                    if (window.innerWidth <= 768) {
-                        navLinks.classList.remove('active');
-                        const spans = mobileBtn.querySelectorAll('span');
-                        spans[0].style.transform = 'none';
-                        spans[1].style.opacity = '1';
-                        spans[2].style.transform = 'none';
-                    }
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
                 });
             });
 
-            // 2. Smooth Scrolling for Anchor Links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if(targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        // Offset for sticky header
-                        const headerOffset = 80;
-                        const elementPosition = targetElement.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-  
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: "smooth"
-                        });
-                    }
-                });
+            // 3. Theme Toggle (Light/Dark Mode)
+            const themeToggle = document.getElementById('themeToggle');
+            const htmlEl = document.documentElement;
+            const moonIcon = document.getElementById('moonIcon');
+            const sunIcon = document.getElementById('sunIcon');
+
+            // Check system preference
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                htmlEl.setAttribute('data-theme', 'dark');
+                moonIcon.style.display = 'none';
+                sunIcon.style.display = 'block';
+            }
+
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = htmlEl.getAttribute('data-theme');
+                if (currentTheme === 'light') {
+                    htmlEl.setAttribute('data-theme', 'dark');
+                    moonIcon.style.display = 'none';
+                    sunIcon.style.display = 'block';
+                } else {
+                    htmlEl.setAttribute('data-theme', 'light');
+                    moonIcon.style.display = 'block';
+                    sunIcon.style.display = 'none';
+                }
+                // Redraw chart to match theme colors
+                drawChart();
             });
 
-            // 3. FAQ Accordion Logic
+            // 4. Scroll Reveal Animations (Intersection Observer)
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            const revealOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                });
+            }, revealOptions);
+
+            revealElements.forEach(el => revealOnScroll.observe(el));
+
+            // 5. FAQ Accordion Logic
             const accordionHeaders = document.querySelectorAll('.accordion-header');
             
             accordionHeaders.forEach(header => {
@@ -1132,207 +1469,164 @@
                     const content = header.nextElementSibling;
                     const isActive = item.classList.contains('active');
                     
-                    // Close all other accordions
-                    document.querySelectorAll('.accordion-item').forEach(otherItem => {
-                        otherItem.classList.remove('active');
-                        otherItem.querySelector('.accordion-content').style.maxHeight = null;
-                        otherItem.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
+                    // Close all
+                    document.querySelectorAll('.accordion-item').forEach(accItem => {
+                        accItem.classList.remove('active');
+                        accItem.querySelector('.accordion-content').style.maxHeight = null;
+                        accItem.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
                     });
-                    
-                    // Toggle current accordion
+
+                    // Open clicked if it wasn't active
                     if (!isActive) {
                         item.classList.add('active');
-                        content.style.maxHeight = content.scrollHeight + "px";
                         header.setAttribute('aria-expanded', 'true');
+                        content.style.maxHeight = content.scrollHeight + "px";
                     }
                 });
             });
 
-            // 4. Custom Canvas Chart Rendering Engine
-            // To provide visual benchmarks without relying on heavy external libraries like Chart.js
-            
-            class SimpleBarChart {
-                constructor(canvasId, data, options) {
-                    this.canvas = document.getElementById(canvasId);
-                    if(!this.canvas) return;
-                    this.ctx = this.canvas.getContext('2d');
-                    this.data = data;
-                    this.options = options || {};
-                    
-                    // Handle high DPI displays
-                    this.setupCanvas();
-                    
-                    // Draw initially
-                    this.draw();
-                    
-                    // Redraw on window resize
-                    window.addEventListener('resize', () => {
-                        this.setupCanvas();
-                        this.draw();
-                    });
+            // 6. Interactive Demo Simulation Logic
+            const demoInput = document.getElementById('demoInput');
+            const demoBtn = document.getElementById('demoBtn');
+            const demoDefault = document.getElementById('demoDefault');
+            const demoSpinner = document.getElementById('demoSpinner');
+            const demoLoadingText = document.getElementById('demoLoadingText');
+            const demoResult = document.getElementById('demoResult');
+            const demoResultTitle = document.getElementById('demoResultTitle');
+            const demoResultText = document.getElementById('demoResultText');
+
+            function simulateIntebwioGeneration() {
+                const query = demoInput.value.trim();
+                if(!query) {
+                    alert("Please enter a query to test the engine.");
+                    return;
                 }
-                
-                setupCanvas() {
-                    const rect = this.canvas.parentElement.getBoundingClientRect();
-                    this.canvas.width = rect.width;
-                    this.canvas.height = 300; // Fixed height
+
+                // Hide default and result, show spinner
+                demoDefault.style.display = 'none';
+                demoResult.style.display = 'none';
+                demoSpinner.style.display = 'block';
+                demoLoadingText.style.display = 'block';
+
+                demoLoadingText.textContent = "Checking for duplicates...";
+
+                // Simulate steps
+                setTimeout(() => {
+                    demoLoadingText.textContent = "No duplicates found. Scraping the web via AI...";
+                }, 1000);
+
+                setTimeout(() => {
+                    demoLoadingText.textContent = "Synthesizing information and generating UI...";
+                }, 2500);
+
+                setTimeout(() => {
+                    // Stop spinner, show result
+                    demoSpinner.style.display = 'none';
+                    demoLoadingText.style.display = 'none';
                     
-                    const dpr = window.devicePixelRatio || 1;
-                    this.canvas.style.width = `${rect.width}px`;
-                    this.canvas.style.height = `300px`;
+                    demoResultTitle.textContent = "Comprehensive Guide: " + query;
+                    demoResultText.textContent = `This is a simulated AI-generated page answering your query about "${query}". In the real Intebwio browser, this space would be filled with structured paragraphs, automatically generated tables, and dynamic charts compiled from the best sources on the web, completely free of ads and SEO bloat.`;
                     
-                    this.canvas.width = rect.width * dpr;
-                    this.canvas.height = 300 * dpr;
-                    this.ctx.scale(dpr, dpr);
-                }
-                
-                draw() {
-                    const width = this.canvas.width / (window.devicePixelRatio || 1);
-                    const height = 300;
-                    this.ctx.clearRect(0, 0, width, height);
-                    
-                    const padding = { top: 40, right: 20, bottom: 40, left: 50 };
-                    const chartWidth = width - padding.left - padding.right;
-                    const chartHeight = height - padding.top - padding.bottom;
-                    
-                    const labels = this.data.map(d => d.label);
-                    const values = this.data.map(d => d.value);
-                    const colors = this.data.map(d => d.color);
-                    
-                    const maxValue = Math.max(...values) * 1.1; // Add 10% headroom
-                    
-                    // Draw Y axis labels and grid lines
-                    this.ctx.fillStyle = '#94a3b8';
-                    this.ctx.font = '12px sans-serif';
-                    this.ctx.textAlign = 'right';
-                    this.ctx.textBaseline = 'middle';
-                    
-                    const steps = 5;
-                    for (let i = 0; i <= steps; i++) {
-                        const yVal = maxValue * (i / steps);
-                        const yPos = height - padding.bottom - (chartHeight * (i / steps));
-                        
-                        // Text
-                        this.ctx.fillText(Math.round(yVal), padding.left - 10, yPos);
-                        
-                        // Grid line
-                        this.ctx.beginPath();
-                        this.ctx.moveTo(padding.left, yPos);
-                        this.ctx.lineTo(width - padding.right, yPos);
-                        this.ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
-                        this.ctx.stroke();
-                    }
-                    
-                    // Draw Bars
-                    const barWidth = chartWidth / labels.length * 0.6;
-                    const barSpacing = chartWidth / labels.length;
-                    
-                    this.ctx.textAlign = 'center';
-                    this.ctx.textBaseline = 'top';
-                    
-                    for (let i = 0; i < labels.length; i++) {
-                        const val = values[i];
-                        const barHeight = (val / maxValue) * chartHeight;
-                        
-                        const x = padding.left + (i * barSpacing) + (barSpacing - barWidth) / 2;
-                        const y = height - padding.bottom - barHeight;
-                        
-                        // Draw Bar
-                        this.ctx.fillStyle = colors[i];
-                        
-                        // Rounded top corners
-                        const radius = 5;
-                        this.ctx.beginPath();
-                        this.ctx.moveTo(x, y + barHeight);
-                        this.ctx.lineTo(x, y + radius);
-                        this.ctx.quadraticCurveTo(x, y, x + radius, y);
-                        this.ctx.lineTo(x + barWidth - radius, y);
-                        this.ctx.quadraticCurveTo(x + barWidth, y, x + barWidth, y + radius);
-                        this.ctx.lineTo(x + barWidth, y + barHeight);
-                        this.ctx.fill();
-                        
-                        // Draw Label (X Axis)
-                        this.ctx.fillStyle = '#e2e8f0';
-                        this.ctx.fillText(labels[i], x + barWidth / 2, height - padding.bottom + 10);
-                        
-                        // Draw Value on top of bar
-                        this.ctx.fillStyle = '#ffffff';
-                        this.ctx.font = 'bold 12px sans-serif';
-                        this.ctx.fillText(val, x + barWidth / 2, y - 20);
-                    }
-                }
+                    demoResult.style.display = 'block';
+                }, 4000);
             }
 
-            // Initialize Speedometer Chart Data (Higher is Better)
-            const speedometerData =[
-                { label: 'Intebwio', value: 345, color: '#10b981' }, // Secondary color
-                { label: 'Chrome', value: 330, color: '#3b82f6' },
-                { label: 'Firefox', value: 290, color: '#f97316' },
-                { label: 'Brave', value: 325, color: '#ef4444' }
-            ];
-            
-            // Initialize RAM Chart Data (Lower is Better)
-            const ramData =[
-                { label: 'Intebwio', value: 850, color: '#10b981' }, 
-                { label: 'Chrome', value: 1450, color: '#3b82f6' },
-                { label: 'Firefox', value: 1200, color: '#f97316' },
-                { label: 'Brave', value: 1150, color: '#ef4444' }
-            ];
+            demoBtn.addEventListener('click', simulateIntebwioGeneration);
+            demoInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') simulateIntebwioGeneration();
+            });
 
-            // Render charts if elements exist (using Intersection Observer for performance)
-            const chartObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        if(entry.target.id === 'speedometerChart') {
-                            new SimpleBarChart('speedometerChart', speedometerData);
-                        }
-                        if(entry.target.id === 'ramChart') {
-                            new SimpleBarChart('ramChart', ramData);
-                        }
-                        chartObserver.unobserve(entry.target); // Draw once
+            // 7. HTML5 Canvas Chart Rendering Logic
+            function drawChart() {
+                const canvas = document.getElementById('perfChart');
+                if(!canvas) return;
+                
+                const ctx = canvas.getContext('2d');
+                const width = canvas.width = canvas.parentElement.clientWidth - 64; // Account for padding
+                const height = canvas.height = 300;
+
+                // Clear canvas
+                ctx.clearRect(0, 0, width, height);
+
+                // Get theme variables for colors
+                const isDark = htmlEl.getAttribute('data-theme') === 'dark';
+                const textColor = isDark ? '#f8fafc' : '#0f172a';
+                const gridColor = isDark ? '#334155' : '#e2e8f0';
+                const barColorTraditional = isDark ? '#94a3b8' : '#cbd5e1';
+                const barColorIntebwio = '#3b82f6';
+
+                const data =[
+                    { label: 'Traditional Search (Reading 5 sites)', value: 180, color: barColorTraditional },
+                    { label: 'Intebwio Synthesis (Instant Page)', value: 15, color: barColorIntebwio }
+                ];
+
+                const paddingX = 60;
+                const paddingY = 40;
+                const chartWidth = width - paddingX * 2;
+                const chartHeight = height - paddingY * 2;
+                const maxValue = 200;
+
+                // Draw Grid
+                ctx.beginPath();
+                ctx.strokeStyle = gridColor;
+                ctx.lineWidth = 1;
+                for(let i=0; i<=4; i++) {
+                    const y = height - paddingY - (i * (chartHeight / 4));
+                    ctx.moveTo(paddingX, y);
+                    ctx.lineTo(width - paddingX, y);
+                    
+                    // Y-Axis Labels
+                    ctx.fillStyle = textColor;
+                    ctx.font = '12px system-ui';
+                    ctx.textAlign = 'right';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText((i * 50) + 's', paddingX - 10, y);
+                }
+                ctx.stroke();
+
+                // Draw Bars with Animation Simulation (drawn instantly here, but could be animated)
+                const barWidth = chartWidth / data.length / 2;
+                
+                data.forEach((item, index) => {
+                    const x = paddingX + (index * (chartWidth / data.length)) + (chartWidth / data.length / 2) - (barWidth / 2);
+                    const barHeight = (item.value / maxValue) * chartHeight;
+                    const y = height - paddingY - barHeight;
+
+                    // Bar shadow
+                    ctx.shadowColor = 'rgba(0,0,0,0.1)';
+                    ctx.shadowBlur = 10;
+                    ctx.shadowOffsetX = 0;
+                    ctx.shadowOffsetY = 5;
+
+                    ctx.fillStyle = item.color;
+                    ctx.fillRect(x, y, barWidth, barHeight);
+
+                    // Reset shadow for text
+                    ctx.shadowColor = 'transparent';
+
+                    // X-Axis Labels
+                    ctx.fillStyle = textColor;
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'top';
+                    ctx.font = '14px system-ui';
+                    
+                    // Multi-line text logic
+                    const words = item.label.split(' ');
+                    ctx.fillText(words[0] + ' ' + words[1], x + barWidth/2, height - paddingY + 10);
+                    if(words.length > 2) {
+                        ctx.fillText(words.slice(2).join(' '), x + barWidth/2, height - paddingY + 28);
                     }
+
+                    // Value label on top of bar
+                    ctx.fillStyle = textColor;
+                    ctx.font = 'bold 16px system-ui';
+                    ctx.fillText(item.value + 's', x + barWidth/2, y - 20);
                 });
-            }, { threshold: 0.1 });
+            }
 
-            const speedCanvas = document.getElementById('speedometerChart');
-            const ramCanvas = document.getElementById('ramChart');
-            
-            if(speedCanvas) chartObserver.observe(speedCanvas);
-            if(ramCanvas) chartObserver.observe(ramCanvas);
-
-
-            // 5. Inject Structured Data (JSON-LD) for SEO
-            // This strongly signals to search engines the nature of this page.
-            const schemaData = {
-                "@context": "https://schema.org",
-                "@type": "Review",
-                "itemReviewed": {
-                    "@type": "SoftwareApplication",
-                    "name": "Intebwio",
-                    "applicationCategory": "WebBrowser",
-                    "operatingSystem": "Windows, macOS, Linux"
-                },
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "4.5",
-                    "bestRating": "5"
-                },
-                "author": {
-                    "@type": "Organization",
-                    "name": "TechBlogOfApps"
-                },
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "TechBlogOfApps"
-                },
-                "datePublished": "2026-04-24",
-                "description": "An independent review of the intebwio web browser, analyzing its speed, RAM usage, and privacy features."
-            };
-
-            const scriptEl = document.createElement('script');
-            scriptEl.type = 'application/ld+json';
-            scriptEl.text = JSON.stringify(schemaData);
-            document.head.appendChild(scriptEl);
+            // Draw chart initially and on resize
+            setTimeout(drawChart, 100); // slight delay to ensure layout is complete
+            window.addEventListener('resize', drawChart);
         });
     </script>
 </body>
